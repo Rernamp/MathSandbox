@@ -19,8 +19,13 @@ silentValue = np.zeros(silentSamplesCount)
 sinTime = np.linspace(0, (samplesCountOneSin * sinPeriodsCount) / fs, samplesCountOneSin * sinPeriodsCount)
 ySin = np.sin(2 * fSin * np.pi * sinTime)
 
+startSilentSamplesCount = 1000
+
 concatValue = np.concat((ySin, silentValue))
 y = np.tile(concatValue, repeatCounts)
+
+y = np.concat((np.zeros(silentSamplesCount), y))
+
 samplesCount = y.size
 duration = samplesCount / fs
 time = np.linspace(0, duration, samplesCount)
@@ -28,13 +33,14 @@ time = np.linspace(0, duration, samplesCount)
 noise = np.random.normal(0, 0.1, len(y))
 yWithNoise = y + noise
 
-correlate = signal.convolve(y, np.flip(ySin))
+correlate = signal.convolve(yWithNoise, np.flip(ySin))
 # correlate = np.correlate(yWithNoise, ySin)
 correlate = correlate / correlate.max()
 
 correlateTime = np.linspace(0, correlate.size / fs, correlate.size)
 
 peaks, _ = signal.find_peaks(correlate, width=1)
+# peaks = signal.find_peaks_cwt(correlate, widths=np.arange(1, ySin.size))
 # peaks = signal.argrelextrema(
 #     np.array(correlate),
 #     comparator=np.greater,order=2
@@ -43,7 +49,7 @@ peaks, _ = signal.find_peaks(correlate, width=1)
 
 estimatedSignals = np.zeros(y.size)
 
-filteredPeaks = peaks[correlate[peaks] > correlate[peaks].max() * 0.97]
+filteredPeaks = peaks[correlate[peaks] > correlate[peaks].max() * 0.7]
 
 
 for peak in filteredPeaks:
