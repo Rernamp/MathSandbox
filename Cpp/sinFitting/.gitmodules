@@ -1,0 +1,9 @@
+[submodule "Dependencies/matplotplusplus"]
+	path = Dependencies/matplotplusplus
+	url = https://github.com/alandefreitas/matplotplusplus.git
+[submodule "Dependencies/eigen"]
+	path = Dependencies/eigen
+	url = https://gitlab.com/libeigen/eigen.git
+[submodule "Dependencies/nlopt"]
+	path = Dependencies/nlopt
+	url = https://github.com/stevengj/nlopt.git
