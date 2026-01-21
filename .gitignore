@@ -2,3 +2,5 @@
 /Jupyter/.ipynb_checkpoints
 /.idea
 /Cpp/sinFitting/build
+.venv
+/Python/Jupyter/.ipynb_checkpoints
