@@ -4,3 +4,5 @@
 /Cpp/sinFitting/build
 .venv
 /Python/Jupyter/.ipynb_checkpoints
+/Python/LinearOptimization/resistor_accuracy.csv
+/Python/LinearOptimization/resistor_solutions.csv
