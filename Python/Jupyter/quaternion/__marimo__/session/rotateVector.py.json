@@ -1,0 +1,191 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.0",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "924ac7f64d6c1b449663d09630cf0e13",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "6a5bc94b232f9a13ead41a213e96a0d9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "9d54452668148eaa73b0d0a3017c5ce5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Original vector: <marimo-ui-element object-id='vblA-0' random-id='58458974-fa37-7eca-0bac-ad86226a987c'><marimo-matrix data-initial-value='[[1],[1],[1]]' data-label='null' data-min-value='[[0],[0],[0]]' data-max-value='[[1],[1],[1]]' data-step='[[0.1],[0.1],[0.1]]' data-precision='1' data-symmetric='false' data-debounce='false' data-scientific='false' data-disabled='[[false],[false],[false]]'></marimo-matrix></marimo-ui-element></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "2964ce5658b27c8477387948d6f3fec9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "c1d65d62c67fa4f03dda98bb695cedd4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "d85c2ad9298cdfce2fab877ab5c72f6d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "5f803b07f2de1444f93fbc0e057c8063",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "4d546a1f2049baace2d23a173c3f7110",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "733c8c53c4db65f19a9989ebf591eac6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Rotation ray: <marimo-ui-element object-id='PKri-0' random-id='96a58e91-47b2-5517-22a6-3044772a2b6c'><marimo-matrix data-initial-value='[[1],[1],[1]]' data-label='null' data-min-value='[[-1],[-1],[-1]]' data-max-value='[[1],[1],[1]]' data-step='[[0.1],[0.1],[0.1]]' data-precision='1' data-symmetric='false' data-debounce='false' data-scientific='false' data-disabled='[[false],[false],[false]]'></marimo-matrix></marimo-ui-element>\nRotation angle: <marimo-ui-element object-id='Xref-0' random-id='6c362877-c93c-6187-0cd8-1af3515db3a9'><marimo-slider data-initial-value='90' data-label='null' data-start='0' data-stop='360' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element> <marimo-ui-element object-id='SFPL-0' random-id='bdde4b51-cc57-67ab-ffe5-467bc9f44e57'><marimo-number data-initial-value='115' data-label='null' data-start='0' data-stop='360' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element> degree</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "2393e0de72c6ecca4c339124bc629655",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "d3679084ec647c06bdbd90a34f413a52",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">rotation quaternion(0.707106781186548, 0, -3.92523114670944e-17, 0.707106781186548)</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "f7e14dfdb9d212943ee6aba14015ac46",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Rotated [0.00000000e+00 1.00000000e+00 5.55111512e-17]</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "b44ac3ceea3f75e2c13b1f9d20f5dbae",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='Hstk-0' random-id='ca85a5bd-c2e5-480c-f7ae-1e82655a61d5'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;c42c0a113adb45769c82ac9bce41dbf8&quot;}' data-label='null' data-model-id='&quot;c42c0a113adb45769c82ac9bce41dbf8&quot;'></marimo-anywidget></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "8872257c5e3300894350ef665612c5d6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
