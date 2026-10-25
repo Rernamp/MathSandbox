@@ -1,0 +1,3 @@
+[submodule "Python/Jupyter/dependencies/RnmpPy"]
+	path = Python/Jupyter/dependencies/RnmpPy
+	url = https://github.com/Rernamp/RnmpPy.git
