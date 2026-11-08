@@ -14,8 +14,9 @@ def _():
     import lmfit
 
     from rnmp.utils.signal import add_noise
+    from scipy.signal import lombscargle
 
-    return add_noise, go, lmfit, mo, np
+    return add_noise, go, lmfit, lombscargle, mo, np
 
 
 @app.cell
@@ -95,7 +96,7 @@ def _(add_noise, reference_signal, snr):
 
 
 @app.cell
-def _(config, lmfit, noised_signal, np):
+def _(config, lmfit, lombscargle, noised_signal, np, time_points):
     _std_signal = np.std(noised_signal)
     _mean_signal = np.mean(noised_signal)
 
@@ -104,6 +105,14 @@ def _(config, lmfit, noised_signal, np):
 
     _initial_f = np.count_nonzero(np.diff(np.signbit(noised_signal-_mean_signal)))
     _initial_phi = np.arcsin((noised_signal[0] - _initial_offset) / _initial_A)
+
+    # угловые частоты
+    T = time_points.max() - time_points.min()
+    freqs = np.linspace(1e-3, 20/T, 5000)
+    pgram = lombscargle(time_points, noised_signal - noised_signal.mean(), 2*np.pi*freqs)
+    omega_peak = freqs[np.argmax(pgram)]
+
+    _initial_f = omega_peak
 
     params = lmfit.Parameters()
     params.add('A', value=_initial_A + config["init_offset"]["A"])
@@ -205,18 +214,12 @@ def _(go, np, values):
         ]
     )
     _fig
-
     return
 
 
 @app.cell
 def _(out):
     out.params
-    return
-
-
-@app.cell
-def _():
     return
 
 
